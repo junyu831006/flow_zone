@@ -1,0 +1,261 @@
+@font-face {
+    font-family: Arial; 
+    src: url('font/Arial.eot') format("eot"),
+         url('font/Arial.ttf') format("truetype"),
+         url('font/Arial.woff') format("woff"),
+         url('font/Arial.otf') format("openType");
+  }
+@font-face {
+font-family: 'Nauman'; 
+    src: url('font/Nauman_Regular.otf') format("openType"),
+         url('font/nauman_regular.eot') format("eot"),  
+         url('font/nauman_regular.ttf') format("truetype");
+}
+*{
+    outline: 1px solid blue;
+} 
+html{
+    font-size: 10px;
+    font-family: Arial,'Microsoft JhengHei';
+    /* vertical-align: middle; */
+
+}
+
+@media screen and (max-width: 576px){
+
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media screen and (min-width: 768px) and (max-width: 1999px){
+    .f_1{
+        width: 16%;
+    }
+    .nav_side,.banner_mail{
+        display: none;
+    }
+    .banner_pic{
+        width: 100%;
+    }
+    
+}
+/*顏色總控*/
+.deepblue{
+    color: #1862DB;
+}
+.white{
+    color: #fff;
+}
+.oblue_bg{
+    background-color: #1EB7CD;
+}
+/*文字總控*/
+h1{
+    font-size: 55px;
+    font-family: 'Nauman';
+    letter-spacing: 6px;
+}
+.fz_30{
+    font-size: 3rem;
+}
+.fz_20{
+    font-size: 2rem;  
+    /* color: #2E2E2E;  */
+}
+.fz_16{
+    font-size: 1.6rem;
+}
+/* line-height */
+.lh_21{
+    line-height: 2.1;
+}
+.lh_16{
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+}
+.border_r{
+    border-radius: 4px 15px 4px 15px;
+}
+i{
+    font-size: 14px;
+}
+.btn{
+    display: inline-block;
+    width: 74px;
+    font-size: 16px;
+    font-weight: blod;
+    padding: 12px 36px;
+    letter-spacing: 2px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.35);
+}
+
+/* 屬性控制 */
+.mw_1200{
+    max-width: 1200px;
+    margin: auto;
+}
+.ptb_60{
+    padding: 60px 0;
+}
+.pt_20{
+    padding-top: 20px;
+}
+.v_m{
+    vertical-align: middle;
+}
+.ta_c{
+    text-align: center;
+}
+.fw_7{
+    font-weight: 700;
+}
+.d_f{
+    display: flex;
+}
+/* grid */
+.col_12{
+    width: 100%;
+}
+/* 開始header */
+header{
+    background-image: url('../img/header_bg.svg');
+    background-repeat: no-repeat;
+    /* background-size: 560px 260px; */
+    background-position: right top;
+    padding-bottom: 234px;
+    /* background-size: 100%; */
+}
+nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    height: 74px;
+    font-size: 0; /*除去4px*/
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+}
+.nav_txt>li>a{
+    font-size: 16px;
+    line-height: 32px;
+}
+.nav_txt>li>a:hover{
+    color: #1EB7CD;
+    font-weight: 700;
+}
+nav img{
+    width: 120px;
+}
+.f_1{
+    width: 50%;
+}
+nav li{
+    float: left;
+}
+nav li a{
+    display: inline-block;
+    padding: 0 0 0 20px;
+    color: #484848;   
+}
+.nav_icon{
+    padding-left: 12px;
+}
+.material-icons{
+    color: #484848;
+    box-sizing: border-box;
+}
+/* header_banner */
+.nav_side{
+    align-self: center;
+}
+.side_circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #96DDE7; 
+    position: relative;
+    margin-bottom: 32px;
+}
+.fill_circle{
+    background-color: #96DDE7; 
+}
+
+.banner_txt{
+    width: 51.0833%;
+    max-width: 382px;
+    padding: 0 75px 0 5%;
+}
+.banner_txt p:first-of-type{
+    letter-spacing: 3px;
+    padding: 10px 0 20px 0;
+}
+.banner_txt a{
+    margin: 50px 30px 0 0;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    /* margin: auto; */
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+  /* The dots/bullets/indicators */
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    border: 1px solid #1862DB;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #1862DB;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .7
+transform: translate
+} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .7
+transform: translate
+} 
+    to {opacity: 1}
+}
+.banner_mail{
+    display: inline-block;
+    font-family: 'Nauman',Arial,'Microsoft JhengHei';   
+    color: #1862DB;
+    padding-left: 19.16666667%;
+    letter-spacing: 2px;
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+}
