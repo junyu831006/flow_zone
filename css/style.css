@@ -1,18 +1,18 @@
 @font-face {
     font-family: Arial; 
     src: url('font/Arial.eot') format("eot"),
-         url('font/Arial.ttf') format("truetype"),
-         url('font/Arial.woff') format("woff"),
-         url('font/Arial.otf') format("openType");
-  }
+        url('font/Arial.ttf') format("truetype"),
+        url('font/Arial.woff') format("woff"),
+        url('font/Arial.otf') format("openType");
+}
 @font-face {
 font-family: 'Nauman'; 
     src: url('font/Nauman_Regular.otf') format("openType"),
-         url('font/nauman_regular.eot') format("eot"),  
-         url('font/nauman_regular.ttf') format("truetype");
+        url('font/nauman_regular.eot') format("eot"),  
+        url('font/nauman_regular.ttf') format("truetype");
 }
 *{
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 } 
 html{
     font-size: 10px;
@@ -21,24 +21,7 @@ html{
 
 }
 
-@media screen and (max-width: 576px){
 
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-
-}
-@media screen and (min-width: 768px) and (max-width: 1999px){
-    .f_1{
-        width: 16%;
-    }
-    .nav_side,.banner_mail{
-        display: none;
-    }
-    .banner_pic{
-        width: 100%;
-    }
-    
-}
 /*顏色總控*/
 .deepblue{
     color: #1862DB;
@@ -53,8 +36,11 @@ html{
 h1{
     font-size: 55px;
     font-family: 'Nauman';
-    letter-spacing: 6px;
 }
+h2{
+    font-size: 3rem;
+}
+
 .fz_30{
     font-size: 3rem;
 }
@@ -95,6 +81,9 @@ i{
 /* 屬性控制 */
 .mw_1200{
     max-width: 1200px;
+    margin: auto;
+}
+.m_a{
     margin: auto;
 }
 .ptb_60{
@@ -138,6 +127,8 @@ nav{
 .nav_menu{
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
+
 }
 .nav_txt>li>a{
     font-size: 16px;
@@ -151,7 +142,7 @@ nav img{
     width: 120px;
 }
 .f_1{
-    width: 50%;
+    flex: 1;
 }
 nav li{
     float: left;
@@ -183,18 +174,16 @@ nav li a{
 .fill_circle{
     background-color: #96DDE7; 
 }
-
 .banner_txt{
     width: 51.0833%;
     max-width: 382px;
-    padding: 0 75px 0 5%;
+    padding: 5% 5% 0 5%;
 }
 .banner_txt p:first-of-type{
-    letter-spacing: 3px;
     padding: 10px 0 20px 0;
 }
 .banner_txt a{
-    margin: 50px 30px 0 0;
+    margin: 5% 5% 0 0;
 }
 /* Slideshow container */
 .slideshow-container {
@@ -213,7 +202,6 @@ nav li a{
     width: 100%;
     text-align: center;
 }
-
   /* The dots/bullets/indicators */
 .dot {
     height: 12px;
@@ -224,11 +212,9 @@ nav li a{
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-
 .active {
     background-color: #1862DB;
 }
-
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
@@ -239,14 +225,14 @@ nav li a{
 
 @-webkit-keyframes fade {
     from {opacity: .7
-transform: translate
+/* transform: translate */
 } 
     to {opacity: 1}
 }
 
 @keyframes fade {
     from {opacity: .7
-transform: translate
+/* transform: translate */
 } 
     to {opacity: 1}
 }
@@ -258,4 +244,97 @@ transform: translate
     letter-spacing: 2px;
     writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
+}
+
+/* s1 */
+.s1_bg{
+    background-image: url('../img/service_bg2.png');
+    height: 1000px;
+}
+.s1_circle {
+    display: inline-block;
+    background: #1862db;
+    width: 120px;
+    height: 120px;
+    border-radius: 50% 50%;
+}
+.s1_circle i{
+    font-size: 60px;
+    color: #fff;
+}
+.s1_circle+p{
+    color: #1862DB;
+    font-weight: 700;
+}
+.s1_content{
+    width: 60%;
+    justify-content: space-around;
+
+}
+/*******  media query  *********/
+@media screen and (max-width: 575px){
+    .nav_side,.banner_mail{
+        display: none;
+    }
+    .banner_content{
+        position: relative;
+    }
+    .banner_txt{
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .banner_txt p:nth-child(3){
+        display: none;
+    }
+    header{
+        background-image: none;
+    }
+    
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .nav_side,.banner_mail{
+        display: none;
+    }
+    .banner_content{
+        position: relative;
+    }
+    .banner_pic{
+        width: 100%;
+    }
+    .banner_txt{
+        position: absolute;
+        top: 10%;
+        z-index: 1;
+        width: 100%;
+    }
+    .banner_txt p:nth-child(3){
+        display: none;
+    }
+    header{
+        background-image: none;
+    }
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+
+    .nav_side,.banner_mail{
+        display: none;
+    }
+    .banner_content{
+        position: relative;
+    }
+    .banner_pic{
+        width: 100%;
+    }
+    .banner_txt{
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    header{
+        background-image: none;
+    }
+    
 }

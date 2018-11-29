@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
-    <script src="../js/all.js"></script>
 
     <title>Flow Zone</title>
 </head>
@@ -20,7 +19,7 @@
 <body>
     <!-- 開始 header -->
     <header>
-        <div class="mw_1200 header_bg ">
+        <div class="mw_1200 ">
             <nav>
                 <div>
                     <a href="index.html">
@@ -83,7 +82,8 @@
                         <a href="surf.html" class="btn border_r lh_16 ta_c oblue_bg white fw_7">探索衝浪</a>
                         <a href="yoga.html" class="btn border_r lh_16 ta_c oblue_bg white fw_7">探索瑜伽</a>
                     </div>
-                    <div class="banner_pic"> <!--幻燈片-->
+                    <div class="banner_pic">
+                        <!--幻燈片-->
                         <div class="mySlides fade">
                             <img src="../img/banner_pic1.png" class="v_m col_12">
                         </div>
@@ -112,7 +112,45 @@
     </header>
     <!-- s1開始 -->
     <section class="s1">
-
+        <div class="s1_bg">
+            <div class="nav_side">
+                <ul>
+                    <li class="side_circle fill_circle">
+                        <a href="javascript:;" class="nav_side_header"></a>
+                    </li>
+                    <li class="side_circle ">
+                        <a href="javascript:;" class="nav_side_feature"></a>
+                    </li>
+                    <li class="side_circle ">
+                        <a href="javascript:;" class="nav_side_yoga"></a>
+                    </li>
+                    <li class="side_circle ">
+                        <a href="javascript:;" class="nav_side_surf"></a>
+                    </li>
+                    <li class="side_circle">
+                        <a href="javascript:;" class="nav_side_teacher"></a>
+                    </li>
+                </ul>
+            </div>
+            <h2 class="ta_c">服務項目</h2>
+            <div class="d_f s1_content m_a">
+                <div>
+                    <span class="s1_circle"><i class="material-icons">
+                            shopping_cart
+                            </i></span>
+                    <p class="fz_20">線上預訂課程</p>
+                </div>
+                <div>
+                    <span class="s1_circle">2</span>
+                    <p class="fz_20">徜徉於山海之間</p>
+                </div>
+                <div>
+                    <span class="s1_circle">2</span>
+                    <p class="fz_20">國際認證師資</p>
+                </div>
+                <!-- <img src="../img/service_bg2.png" alt="" > -->
+            </div>
+        </div>
     </section><!-- s1結束 -->
     <!-- s2開始 -->
     <section class="s2">
@@ -127,31 +165,8 @@
 
     </section><!-- s4結束 -->
     <footer></footer>
+    <script src="../js/all.js"></script>
 
 </body>
 
 </html>
-
-<script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 2550); // Change image every 2 seconds
-    }
-</script>
