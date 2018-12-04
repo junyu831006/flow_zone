@@ -82,10 +82,127 @@ transform: translate
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+  background: #3d566e;
+  color: #ecf0f1;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+#hamburger-icon {
+  width: 100px;
+  height: 50px;
+  position: relative;
+  display: block;
+  margin: 100px auto 50px auto;
+}
+#hamburger-icon .line {
+  display: block;
+  background: #ecf0f1;
+  width: 100px;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  border-radius: 4px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+#hamburger-icon .line.line-1 {
+  top: 0;
+}
+#hamburger-icon .line.line-2 {
+  top: 50%;
+}
+#hamburger-icon .line.line-3 {
+  top: 100%;
+}
+#hamburger-icon:hover .line-1, #hamburger-icon:focus .line-1 {
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+}
+#hamburger-icon:hover .line-3, #hamburger-icon:focus .line-3 {
+  transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  -moz-transform: translateY(4px);
+}
+#hamburger-icon.active .line-1 {
+  transform: translateY(25px) translateX(0) rotate(45deg);
+  -webkit-transform: translateY(25px) translateX(0) rotate(45deg);
+  -moz-transform: translateY(25px) translateX(0) rotate(45deg);
+}
+#hamburger-icon.active .line-2 {
+  opacity: 0;
+}
+#hamburger-icon.active .line-3 {
+  transform: translateY(-25px) translateX(0) rotate(-45deg);
+  -webkit-transform: translateY(-25px) translateX(0) rotate(-45deg);
+  -moz-transform: translateY(-25px) translateX(0) rotate(-45deg);
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #95a5a6;
+  margin: 0.5em 1.5em;
+  display: inline-block;
+}
+a:hover, a:focus {
+  color: #ecf0f1;
+}
+
+
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+  <a id="hamburger-icon" href="#" title="Menu">
+    <span class="line line-1"></span>
+    <span class="line line-2"></span>
+    <span class="line line-3"></span>
+  </a>
+  <h1>Click to see the animation</h1>
+  <a href="https://twitter.com/stevenfabre" title="Follow me on twitter">@stevenfabre</a>
+  <a href="http://stevenfabre.com" title="Read my blog">stevenfabre.com</a>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="693" height="220" xml:space="preserve">
+    <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+		<path fill="#fff" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+    </pattern>
+<g>
+ 
+<text  id="text" x="115" y="150" style="font-weight:bold;font-size: 98pt; font-family:helvetica">SURF</text>	
+</g>
 
+	<mask id="text-mask">
+      <use x="0" y="0" xlink:href="#text" opacity="1" fill="#ffffff"/>
+    </mask>	
+        <g id="eff">
+    <use x="0" y="0" xlink:href="#text" fill="#69a8c9"/>
+  	<rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" x="-300" y="100" width="1200" height="120" opacity="0.3">
+    <animate attributeType="xml" attributeName="x" from="-300" to="0" repeatCount="indefinite" dur="3s"/>
+  </rect>
+
+   <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="95" width="1600" height="120" opacity="0.3">
+    <animate attributeType="xml" attributeName="x" from="-400" to="0" repeatCount="indefinite" dur="4s"/>
+  </rect>
+      
+  <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="105" width="800" height="120" opacity="0.3">
+    <animate attributeType="xml" attributeName="x" from="-200" to="0" repeatCount="indefinite" dur="2.4s"/>
+  </rect>
+
+      <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="105" width="2000" height="120" opacity="0.3">
+    <animate attributeType="xml" attributeName="x" from="-500" to="0" repeatCount="indefinite" dur="3.8s"/>
+  </rect>
+    </g>
+
+    <use xlink:href="#eff" opacity="0.9"/>
+</svg>
 <h2>Automatic Slideshow</h2>
 <p>Change image every 2 seconds:</p>
 <div class="wrap">
@@ -120,6 +237,13 @@ transform: translate
 </div>
 
 <script>
+  $( document ).ready(function() {
+  var hamburger = $('#hamburger-icon');
+  hamburger.click(function() {
+     hamburger.toggleClass('active');
+     return false;
+  });
+});
 var slideIndex = 0;
 showSlides();
 
@@ -140,37 +264,6 @@ function showSlides() {
     setTimeout(showSlides, 2550); // Change image every 2 seconds
 }
 </script>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="693" height="220" xml:space="preserve">
-    <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
-		<path fill="#fff" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
-    </pattern>
-<g>
-<text  id="text" x="115" y="150" style="font-weight:bold;font-size: 98pt; font-family:helvetica">SURF</text>	
-</g>
 
-	<mask id="text-mask">
-      <use x="0" y="0" xlink:href="#text" opacity="1" fill="#ffffff"/>
-    </mask>	
-        <g id="eff">
-    <use x="0" y="0" xlink:href="#text" fill="#69a8c9"/>
-  	<rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" x="-300" y="100" width="1200" height="120" opacity="0.3">
-    <animate attributeType="xml" attributeName="x" from="-300" to="0" repeatCount="indefinite" dur="3s"/>
-  </rect>
-
-   <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="95" width="1600" height="120" opacity="0.3">
-    <animate attributeType="xml" attributeName="x" from="-400" to="0" repeatCount="indefinite" dur="4s"/>
-  </rect>
-      
-  <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="105" width="800" height="120" opacity="0.3">
-    <animate attributeType="xml" attributeName="x" from="-200" to="0" repeatCount="indefinite" dur="2.4s"/>
-  </rect>
-
-      <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="105" width="2000" height="120" opacity="0.3">
-    <animate attributeType="xml" attributeName="x" from="-500" to="0" repeatCount="indefinite" dur="3.8s"/>
-  </rect>
-    </g>
-
-    <use xlink:href="#eff" opacity="0.9"/>
-</svg>
 </body>
 </html> 

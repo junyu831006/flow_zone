@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+  *, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.stage {
+  width: 100%;
+  height: 100%;
+  padding-top: 10vh;
+  padding-bottom: 30vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  -webkit-perspective-origin: 50% 10%;
+          perspective-origin: 50% 10%;
+}
+
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 5vw;
+  padding-bottom: 0;
+  display: flex;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  box-shadow: inset 0 0 0 1px silver;
+}
+.box:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  box-shadow: inset 0 0 0 1px black;
+}
+
+h2 {
+  margin: auto;
+  font-size: 30vw;
+  line-height: 30vw;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-5vw)  translateY(15%);
+          transform: translateZ(-5vw)  translateY(15%);
+  box-shadow: inset 0 0 0 1px silver;
+}
+img{
+  margin: auto;
+  font-size: 30vw;
+  line-height: 30vw;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-5vw)  translateY(15%);
+          transform: translateZ(-5vw)  translateY(1%);
+  box-shadow: inset 0 0 0 1px silver;
+}
+
+    </style>
+</head>
+
+<body>
+        <section class="stage">
+  
+                <article class="box">
+                  <h2>01</h2>
+                  <img src="../img/yoga_pic3.png" alt="" class="">
+                </article>
+                
+                <article class="box">
+                  <h2>02</h2>
+                  <img src="../img/yoga_pic3.png" alt="">
+                </article>
+                
+                <article class="box">
+                  <h2>03</h2>
+                </article>
+                
+                <article class="box">
+                  <h2>04</h2>
+                </article>
+                
+                <article class="box">
+                  <h2>05</h2>
+                </article>
+                
+                <article class="box">
+                  <h2>06</h2>
+                </article>
+                
+              </section>
+</body>
+
+</html>

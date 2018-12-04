@@ -111,7 +111,8 @@ i{
 .col_12{
     width: 100%;
 }
-/*******  避免覆蓋  *********/
+/* 開始header */
+@media screen and (min-height:1200px){
 header{
     background-image: url('../img/header_bg.svg');
     background-repeat: no-repeat;
@@ -120,108 +121,6 @@ header{
     padding-bottom: 30%;
     /* background-size: 100%; */
 }
-/*******  media query  *********/
-@media screen and (max-width: 575px){
-    header{
-        background-image: none;
-        padding-bottom: 0;
-    }
-    .nav_side,.banner_mail{
-        display: none;
-    }
-    .banner_content{
-        position: relative;
-    }
-    .banner_txt{
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        width: 100%;
-    }
-    .banner_txt p:nth-child(3){
-        display: none;
-    }
-
-    .s1 h2+div{
-        flex-direction: column;
-        text-align: center;
-    }
-    /* .s1 h2{
-        padding-top: 60px;
-    } */
-    .s1 h2+div{
-        flex-direction: column;
-        text-align: center;
-    }
-    .s1_content div:last-child,.s1_content div:nth-of-type(2){
-        margin-top: 30px;
-    }
-}
-@media screen and (max-width: 767px) {
-    header{
-        background-image: none;
-        padding-bottom: 0;
-    }
-    .nav_side,.banner_mail{
-        display: none;
-    }
-    .banner_content{
-        position: relative;
-    }
-    .banner_pic{
-        width: 100%;
-    }
-    .banner_txt{
-        position: absolute;
-        top: 10%;
-        z-index: 1;
-        width: 100%;
-    }
-    .banner_txt p:nth-child(3){
-        display: none;
-    }
-    /* .s1 h2{
-        padding-top: 60px;
-    } */
-    .s1 h2+div{
-        flex-direction: column;
-        text-align: center;
-    }
-    .s1_content div:last-child,.s1_content div:nth-of-type(2){
-        margin-top: 30px;
-    }
-}
-@media screen and (max-width: 1199px){
-    header{
-        background-image: none;
-        padding-bottom: 2% ;
-    }
-    .nav_side,.banner_mail{
-        display: none;
-    }
-    .banner_content{
-        position: relative;
-    }
-    .banner_pic{
-        width: 100%;
-    }
-    .banner_txt{
-        position: absolute;
-        top: 0;
-        z-index: 1;
-    }
-    .s1_bg{
-        height: 700px;
-    }
-    .s1_content{
-        width: 75%;
-    }
-    .s1 h2{
-        padding-top: 10%;
-    }
-}
-/* 開始header */
-
 nav{
     display: flex;
     justify-content: center;
@@ -333,12 +232,14 @@ nav li a{
 
 @-webkit-keyframes fade {
     from {opacity: .7
+/* transform: translate */
 } 
     to {opacity: 1}
 }
 
 @keyframes fade {
     from {opacity: .7
+/* transform: translate */
 } 
     to {opacity: 1}
 }
@@ -351,7 +252,7 @@ nav li a{
     writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
 }
-
+}
 /* s1 */
 .s1_bg{
     background-image: url('../img/service_bg.png');
@@ -394,3 +295,100 @@ nav li a{
 .test2{
     justify-content: flex-end;
 }
+/*******  media query  *********/
+
+    header{
+        background-image: none;
+        padding-bottom: 0;
+    }
+    .nav_side,.banner_mail{
+        display: none;
+    }
+    .banner_content{
+        position: relative;
+    }
+    .banner_txt{
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .banner_txt p:nth-child(3){
+        display: none;
+    }
+
+    .s1 h2+div{
+        flex-direction: column;
+        text-align: center;
+    }
+    .s1 h2{
+        padding-top: 60px;
+    }
+    .s1 h2+div{
+        flex-direction: column;
+        text-align: center;
+    }
+    .s1_content div:last-child,.s1_content div:nth-of-type(2){
+        margin-top: 30px;
+    }
+/*
+@media screen and (max-width: 767px) {
+    header{
+        background-image: none;
+        padding-bottom: 0;
+    }
+    .nav_side,.banner_mail{
+        display: none;
+    }
+    .banner_content{
+        position: relative;
+    }
+    .banner_pic{
+        width: 100%;
+    }
+    .banner_txt{
+        position: absolute;
+        top: 10%;
+        z-index: 1;
+        width: 100%;
+    }
+    .banner_txt p:nth-child(3){
+        display: none;
+    }
+    .s1 h2{
+        padding-top: 60px;
+    }
+    .s1 h2+div{
+        flex-direction: column;
+        text-align: center;
+    }
+    .s1_content div:last-child,.s1_content div:nth-of-type(2){
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 1199px){
+    header{
+        background-image: none;
+        padding: 0 0 2% 0;
+    }
+    .nav_side,.banner_mail{
+        display: none;
+    }
+    .banner_content{
+        position: relative;
+    }
+    .banner_pic{
+        width: 100%;
+    }
+    .banner_txt{
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    .s1_content{
+        width: 75%;
+    }
+    .s1 h2{
+        padding-top: 60px;
+    }
+} */
