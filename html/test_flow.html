@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style_test2.css">
+    <style>
+section {
+  height: 100vh;
+  /* width: 110px; */
+  overflow: hidden;
+}
+
+section {
+    outline: 1px salmon solid;
+  background: url('../surf_bg4.png') no-repeat;
+  background-position: bottom;
+  /* overflow: hidden; */
+}
+
+.ocean {
+  height: 35%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* background: #015871; */
+  overflow: hidden;
+
+}
+
+.wave {
+  background: url('../img/wave.svg') repeat-x;
+  position: absolute;
+  bottom: 0px;
+  width: 6400px;
+  height: 198px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: 125px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+@-webkit-keyframes swell {
+  0%, 100% {
+    -webkit-transform: translate3d(0, -25px, 0);
+            transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 100px, 0);
+            transform: translate3d(0, 100px, 0);
+  }
+}
+@keyframes swell {
+  0%, 100% {
+    -webkit-transform: translate3d(0, -25px, 0);
+            transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 100px, 0);
+            transform: translate3d(0, 100px, 0);
+  }
+}
+
+
+    </style>
+</head>
+<body>
+        <div class="mw_1200 ">
+                <nav>
+                    <div>
+                        <a href="../index.html"> <img src="../img/logo.png" alt="logo" /> </a>
+                    </div>
+                    <div class="f_1"></div>
+                    <div class="nav_menu">
+                        <ul class="nav_txt">
+                            <li><a href="yoga.html">預約瑜伽</a></li>
+                            <li><a href="surf.html">預約衝浪</a></li>
+                            <li><a href="about.html">關於我們</a></li>
+                            <li><a href="location.html">交通指引</a></li>
+                            <li><a href="location.html">登入/註冊</a></li>
+                            <li><a href="location.html">心願清單</a></li>
+                        </ul>
+                        <ul class="nav_icon">
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="material-icons">favorite_border</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="material-icons">shopping_cart</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="material-icons">person</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav_ham">
+                        <a id="ham">
+                            <span class="line line-1"></span>
+                            <span class="line line-2"></span>
+                            <span class="line line-3"></span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div>
+
+            </div>
+            <canvas class="wave-xp"></canvas>
+        <section>
+            <div class="ocean">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                  </div>
+        </section>
+</body>
+</html>
