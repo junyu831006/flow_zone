@@ -1,253 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="難忘的體驗旅程從Flow Zone開始。不論何時何地都能加入瑜珈、衝浪旅程的行列。" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" />
+    <meta name="description" content="難忘的體驗旅程從Flow Zone開始。不論何時何地都能加入瑜珈、衝浪旅程的行列。"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
     <link rel="stylesheet" href="css/css_reset.css" />
-    <link rel="stylesheetˆ" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style_test2.css" />
-
     <title>Flow Zone</title>
 </head>
 
 <body>
     <!-- 開始 header -->
-    <header>
+    <header id="index">
         <div class="mw_1200 ">
             <nav>
-                <div>
-                    <a href="index.html"> <img src="img/logo.png" alt="logo" /> </a>
-                </div>
-                <div class="f_1"></div>
-                <div class="nav_menu">
-                    <ul class="nav_txt">
-                        <li><a href="html/yoga.html">預約瑜伽</a></li>
-                        <li><a href="html/surf.html">預約衝浪</a></li>
-                        <li><a href="html/about.html">關於我們</a></li>
-                        <li><a href="location.html">交通指引</a></li>
-                        <li><a href="location.html">登入/註冊</a></li>
-                        <li><a href="location.html">心願清單</a></li>
-                    </ul>
-                    <ul class="nav_icon">
-                        <li>
-                            <a href="javascript:;">
-                                <i class="material-icons">favorite_border</i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <i class="material-icons">shopping_cart</i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <i class="material-icons">person</i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav_ham">
-                    <a id="ham">
-                        <span class="line line-1"></span>
-                        <span class="line line-2"></span>
-                        <span class="line line-3"></span>
-                    </a>
-                </div>
-            </nav>
-            <!-- 開始 banner -->
-            <div class="mw_1200 banner banner_test">
-                <div class="nav_side">
-                    <ul>
-                        <li class="side_circle fill_circle">
-                            <a href="javascript:;" name="move_index" class="nav_side_header"></a>
-                        </li>
-                        <li class="side_circle ">
-                            <a href="#move_s1" name="move_s1" class="nav_side_feature" >&nbsp;</a>
-                        </li>
-                        <li class="side_circle ">
-                            <a href="javascript:;" name="move_s2" class="nav_side_yoga">&nbsp;</a>
-                        </li>
-                        <li class="side_circle ">
-                            <a href="javascript:;" name="move_s3" class="nav_side_surf">&nbsp;</a>
-                        </li>
-                        <li class="side_circle">
-                            <a href="javascript:;" name="move_s4" class="nav_side_teacher">&nbsp;</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="d_f banner_content  banner_test">
-                    <div class="banner_txt ">
-                        <h1 class="deepblue">FLOW ZONE</h1>
-                        <p class="fz_20 deepblue fw_7">
-                            是位於台東結合瑜伽、衝浪課程的空間
-                        </p>
-                        <p class="banner_sub_content fz_16 lh_21">
-                            座落於太平洋與海岸山脈間。在這裡你可以盡情地徜徉於山海之間，從清晨時刻可以跟著我們到海邊追逐浪花，夜晚時分可以一同在星空下享受瑜伽。
-                        </p>
-                        <a href="surf.html" class="btn border_r lh_16 ta_c oblue_bg white fw_7">探索衝浪</a>
-                        <a href="yoga.html" class="btn border_r lh_16 ta_c oblue_bg white fw_7">探索瑜伽</a>
-                    </div>
-                    <div class="banner_pic">
-                        <!-- 幻燈片 -->
-                        <div class="mySlides fade">
-                            <div class="banner_xl_pic bg1"></div>
-                        </div>
-                        <div class="mySlides fade">
-                            <div class="banner_xl_pic bg2"></div>
-                        </div>
-                        <div class="mySlides fade">
-                            <div class="banner_xl_pic bg3"></div>
-                        </div>
-                        <div class="ta_c pt_20">
-                            <span class="dot v_m" id="dot0"></span>
-                             <span class="dot v_m" id="dot1"></span>
-                            <span class="dot v_m" id="dot2"></span>
-                        </div>
-                    </div>
-                </div>
-                <a href="javascript:;">
-                    <span class="banner_mail fz_16 "> flow_zone@gmail.com </span>
-                </a>
-                <div class="clearfix"></div>
+            <div>
+                <a href="index.html"> <img src="img/logo.png" alt="logo" /> </a>
             </div>
-        </div>
-    </header>
-    <!-- s1開始 -->
-    <section class="s1" id="move_s1">
-        <div class="s1_bg">
-            <div class="nav_side">
-                <ul>
-                    <li class="side_circle fill_circle">
-                        <a href="javascript:;" class="nav_side_header"></a>
-                    </li>
-                    <li class="side_circle ">
-                        <a href="javascript:;" class="nav_side_feature"></a>
-                    </li>
-                    <li class="side_circle ">
-                        <a href="javascript:;" class="nav_side_yoga"></a>
-                    </li>
-                    <li class="side_circle ">
-                        <a href="javascript:;" class="nav_side_surf"></a>
-                    </li>
-                    <li class="side_circle">
-                        <a href="javascript:;" class="nav_side_teacher"></a>
-                    </li>
+            <div class="f_1"></div>
+            <div class="nav_menu">
+                <ul class="nav_txt">
+                <li><a href="html/yoga.html">預約瑜伽</a></li>
+                <li><a href="html/surf.html">預約衝浪</a></li>
+                <li><a href="html/about.html">關於我們</a></li>
+                <li><a href="location.html">交通指引</a></li>
+                <li><a href="location.html">登入/註冊</a></li>
+                <li><a href="location.html">心願清單</a></li>
+                </ul>
+                <ul class="nav_icon">
+                <li>
+                    <a href="javascript:;">
+                    <i class="material-icons">favorite_border</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                    <i class="material-icons">shopping_cart</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                    <i class="material-icons">person</i>
+                    </a>
+                </li>
                 </ul>
             </div>
-            <h2 class="ta_c gray">服務項目</h2>
-            <div class="d_f s1_content m_a">
-                <div>
-                    <span class="s1_circle flow1">
-                        <i class="material-icons">shopping_cart</i>
-                    </span>
-                    <p class="fz_20 pt_20">線上預訂課程</p>
+            <div id="nav_ham">
+                <a id="ham">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+                </a>
+            </div>
+            </nav>
+        <!-- 開始 banner -->
+            <div class="mw_1200 banner banner_test">
+            <div class="nav_side">
+                <ul>
+                <li class="side_circle fill_circle">
+                    <a
+                    href="#index"
+                    name="move_index"
+                    class="nav_side_header"
+                    ></a>
+                </li>
+                <li class="side_circle ">
+                    <a href="#move_s1" name="move_s1" class="nav_side_feature">&nbsp;</a>
+                </li>
+                <li class="side_circle ">
+                    <a href="#move_s2"  name="move_s2" class="nav_side_yoga">&nbsp;</a
+                    >
+                </li>
+                <li class="side_circle ">
+                    <a href="#move_s3"  name="move_s3" class="nav_side_surf">&nbsp;</a
+                    >
+                </li>
+                <li class="side_circle">
+                    <a href="#move_s4"  name="move_s4" class="nav_side_teacher">&nbsp;</a>
+                </li>
+                </ul>
+            </div>
+            <div class="d_f banner_content  banner_test">
+                <div class="banner_txt ">
+                <h1 class="deepblue">FLOW ZONE</h1>
+                <p class="fz_20 deepblue fw_7">
+                    是位於台東結合瑜伽、衝浪課程的空間
+                </p>
+                <p class="banner_sub_content fz_16 lh_21">
+                    座落於太平洋與海岸山脈間。在這裡你可以盡情地徜徉於山海之間，從清晨時刻可以跟著我們到海邊追逐浪花，夜晚時分可以一同在星空下享受瑜伽。
+                </p>
+                <a href="surf.html"class="btn border_r lh_16 ta_c oblue_bg white fw_7">探索衝浪</a>
+                <a href="yoga.html"class="btn border_r lh_16 ta_c oblue_bg white fw_7">探索瑜伽</a>
                 </div>
-                <div>
-                    <span class="s1_circle flow2">
-                        <i class="material-icons">terrain</i>
-                    </span>
-                    <p class="fz_20 pt_20">徜徉於山海之間</p>
+                <div class="banner_pic">
+                <!-- 幻燈片 -->
+                <div class="mySlides fade">
+                    <div class="banner_xl_pic bg1"></div>
                 </div>
-                <div>
-                    <span class="s1_circle flow1">
-                        <i class="material-icons">language</i>
-                    </span>
-                    <p class="fz_20 pt_20">國際認證師資</p>
+                <div class="mySlides fade">
+                    <div class="banner_xl_pic bg2"></div>
                 </div>
-                <!-- <img src="../img/service_bg2.png" alt="" > -->
+                <div class="mySlides fade">
+                    <div class="banner_xl_pic bg3"></div>
+                </div>
+                <div class="ta_c pt_20">
+                    <span class="dot v_m" id="dot0"></span>
+                    <span class="dot v_m" id="dot1"></span>
+                    <span class="dot v_m" id="dot2"></span>
+                </div>
+                </div>
+            </div>
+            <a href="javascript:;">
+                <span class="banner_mail fz_16 "> flow_zone@gmail.com </span>
+            </a>
+            <div class="clearfix"></div>
             </div>
         </div>
-    </section>
-    <!-- s1結束 -->
+        </header>
+        <!-- s1開始 -->
+        <section class="s1" id="move_s1">
+        <div class="s1_bg mw_1200 po_r">
+            <h2 class="ta_c gray">服務項目</h2>
+            <div class="d_f s1_content m_a mw_1200">
+            <div class="nav_side s1_nav po_a">
+                <ul>
+                <li class="side_circle ">
+                    <a href="#index" class="nav_side_header">&nbsp;</a>
+                </li>
+                <li class="side_circle  fill_circle">
+                    <a href="#move_s1" class="nav_side_feature">&nbsp;</a>
+                </li>
+                <li class="side_circle ">
+                    <a href="#move_s2" class="nav_side_yoga">&nbsp;</a>
+                </li>
+                <li class="side_circle ">
+                    <a href="#move_s3" class="nav_side_surf">&nbsp;</a>
+                </li>
+                <li class="side_circle">
+                    <a href="#move_s4" class="nav_side_teacher">&nbsp;</a>
+                </li>
+                </ul>
+            </div>
+            <div>
+                <span class="s1_circle flow1">
+                <i class="material-icons">shopping_cart</i>
+                </span>
+                <p class="fz_20 pt_20">線上預訂課程</p>
+            </div>
+            <div>
+                <span class="s1_circle flow2">
+                <i class="material-icons">terrain</i>
+                </span>
+                <p class="fz_20 pt_20">徜徉於山海之間</p>
+            </div>
+            <div>
+                <span class="s1_circle flow1">
+                <i class="material-icons">language</i>
+                </span>
+                <p class="fz_20 pt_20">國際認證師資</p>
+            </div>
+            <!-- <img src="../img/service_bg2.png" alt="" > -->
+            </div>
+        </div>
+        </section>
+        <!-- s1結束 -->
 
-    <!-- s2開始 -->
-    <section class="s2 ptb_60" id="move_s2">
+        <!-- s2開始 -->
+        <section class="s2 ptb_60" id="move_s2">
         <h2 class="ta_c gray">瑜珈旅程</h2>
         <div class="col-md-12 col-xl-12 s2_contain">
             <div class="col-sm-12  col-md-6 col-xl-6">
-                <img src="img/yoga_pic1.png">
+            <img src="img/yoga_pic1.png" />
             </div>
             <div class="col-sm-9 col-md-5 s2_content  col-xl-3 s2_content_dec1">
-                <div>
-                    <h3>體驗瑜伽</h3>
-                    <p>此項課程是適合完全沒接觸過瑜伽及初階的人，課程會從基礎體式進行教學，配合個人的程度調配上課內容、節奏。</p>
-                    <div class="s2_ta_r">
-                        <a href="yoga.html" class="s2_btn">
-                            <i class="material-icons">keyboard_arrow_right</i>
-                        </a>
-                    </div>
+            <div>
+                <h3>體驗瑜伽</h3>
+                <p>
+                此項課程是適合完全沒接觸過瑜伽及初階的人，課程會從基礎體式進行教學，配合個人的程度調配上課內容、節奏。
+                </p>
+                <div class="s2_ta_r">
+                <a href="yoga.html" class="s2_btn">
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </a>
                 </div>
             </div>
+            </div>
             <div class="h_300">
-                <img src="img/s2_mandala3.png" class=" s2_mandala"alt="">
+            <img src="img/s2_mandala3.png" class=" s2_mandala" alt="" />
             </div>
         </div>
         <div class="col-md-12 col-xl-12 s2_contain">
             <div class="col-sm-12  col-md-6 col-xl-6 order2">
-                <img src="img/yoga_pic2.png">
+            <img src="img/yoga_pic2.png" />
             </div>
             <div class="col-sm-9 col-md-5 s2_content col-xl-3 s2_content_dec2">
-                <div>
-                    <h3>瑜伽師資營</h3>
-                    <p>此項課程是適合完全沒接觸過瑜伽及初階的人，課程會從基礎體式進行教學，配合個人的程度調配上課內容、節奏。</p>
-                    <div class="s2_ta_r">
-                        <a href="yoga.html" class="s2_btn">
-                            <i class="material-icons">keyboard_arrow_right</i>
-                        </a>
-                    </div>
+            <div>
+                <h3>瑜伽師資營</h3>
+                <p>
+                此項課程是適合完全沒接觸過瑜伽及初階的人，課程會從基礎體式進行教學，配合個人的程度調配上課內容、節奏。
+                </p>
+                <div class="s2_ta_r">
+                <a href="yoga.html" class="s2_btn">
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </a>
                 </div>
             </div>
-            
+            </div>
         </div>
         <div class="col-md-12 col-xl-12 s2_contain">
             <div class="col-sm-12  col-md-6 col-xl-6">
-                <img src="img/yoga_pic3.png">
+            <img src="img/yoga_pic3.png" />
             </div>
             <div class="col-sm-9 col-md-5 s2_content  col-xl-3 s2_content_dec1">
-                <div>
-                    <h3>特別活動</h3>
-                    <p>此項課程是適合完全沒接觸過瑜伽及初階的人，課程會從基礎體式進行教學，配合個人的程度調配上課內容、節奏。</p>
-                    <div class="s2_ta_r">
-                        <a href="html/yoga.html" class="s2_btn">
-                            <i class="material-icons">keyboard_arrow_right</i>
-                        </a>
-                    </div>
+            <div>
+                <h3>特別活動</h3>
+                <p>
+                此項課程是適合完全沒接觸過瑜伽及初階的人，課程會從基礎體式進行教學，配合個人的程度調配上課內容、節奏。
+                </p>
+                <div class="s2_ta_r">
+                <a href="html/yoga.html" class="s2_btn">
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </a>
                 </div>
             </div>
+            </div>
         </div>
-    </section>
-    <!-- s2結束 -->
-    <!-- s3開始 -->
-    <section class="s3 " id="move_s3">
+        </section>
+        <!-- s2結束 -->
+        <!-- s3開始 -->
+        <section class="s3 " id="move_s3">
         <div class="col-sm-12 s3_content ">
             <h2>衝浪旅程</h2>
-            <p>在Flow Zone 你可以依照自己的程度選擇適合的課程，跟著衝浪達人逐浪。</p>
-            <div>                
-                <a href="surf.html"><div class="btn_surf">初階衝浪</div></a>
-                <a href="surf.html"><div class="btn_surf">進階衝浪</div></a>
-                <a href="surf.html"><div class="btn_surf">立槳衝浪</div></a>
+            <p>
+            在Flow Zone 你可以依照自己的程度選擇適合的課程，跟著衝浪達人逐浪。
+            </p>
+            <div>
+            <a href="surf.html"> <div class="btn_surf">初階衝浪</div> </a>
+            <a href="surf.html"> <div class="btn_surf">進階衝浪</div> </a>
+            <a href="surf.html"> <div class="btn_surf">立槳衝浪</div> </a>
             </div>
         </div>
         <div class="s3_bg">
             <div class="s3_sky s3_bg_ctrl"></div>
-            <div class="s3_bg_txt  col-sm-12">
-                <span>SURF</span>
-            </div>
+            <div class="s3_bg_txt  col-sm-12"><span>SURF</span></div>
             <div class="s3_sea s3_bg_ctrl"></div>
         </div>
+        </section>
+        <!-- s3結束 -->
+        <!-- s4開始 -->
+        <section class="s4 mw_1200" id="move_s4">
+        <h2>學員評價</h2>
+        <div class="slide_2 ">
+            <input type="radio" id="img1" name="slider-selection" checked />
+            <label for="img2" class="next s4_btn">
+            <i class="material-icons">keyboard_arrow_right</i>
+            </label>
+            <label for="img1" class="prev s4_btn">
+            <i class="material-icons">keyboard_arrow_left</i>
+            </label>
+            <input type="radio" id="img2" name="slider-selection" />
+            <label for="img3" class="next s4_btn">
+            <i class="material-icons">keyboard_arrow_right</i>
+            </label>
+            <label for="img1" class="prev s4_btn">
+            <i class="material-icons">keyboard_arrow_left</i>
+            </label>
+            <input type="radio" id="img3" name="slider-selection" />
+            <label for="img4" class="next s4_btn">
+            <i class="material-icons">keyboard_arrow_right</i>
+            </label>
+            <label for="img2" class="prev s4_btn">
+            <i class="material-icons">keyboard_arrow_left</i>
+            </label>
+            <input type="radio" id="img4" name="slider-selection" />
+            <label for="img5" class="next s4_btn">
+            <i class="material-icons">keyboard_arrow_right</i>
+            </label>
+            <label for="img3" class="prev s4_btn">
+            <i class="material-icons">keyboard_arrow_left</i>
+            </label>
 
-    </section>
-    <!-- s3結束 -->
-    <!-- s4開始 -->
-    <section class="s4" id="move_s4"></section>
-    <!-- s4結束 -->
-    <footer></footer>
-    <script src="js/all.js"></script>
-</body>
-
+            <div class="carousel">
+            <div class="item">
+                <div class="s4_content">
+                <div>
+                    <span>Alex Wu</span>
+                    <ul>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    </ul>
+                </div>
+                <p>教練教學用心 第一次衝浪就能<br>驕傲地站上衝浪板！！</p>
+                </div>
+                <img src="img/s4_stu_1.png" alt="" />
+                <img src="img/s4_bg1.png" alt="" class="s4_bg" />
+            </div>
+            <div class="item">
+                <div class="s4_content">
+                <div>
+                    <span>Debbie Hsu</span>
+                    <ul>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    </ul>
+                </div>
+                <p>衝浪教學很完整！之前都是自<br>己摸索，跟著Owen教練才學到<br>很多細節。</p>
+                </div>
+                <img src="img/s4_stu_2.png" alt="" />
+                <img src="img/s4_bg2.png" alt="" class="s4_bg" />
+            </div>
+            <div class="item">
+                <div class="s4_content">
+                <div>
+                    <span>Vivian Gao</span>
+                    <ul>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    </ul>
+                </div>
+                <p>雖然在台東有點遠，但完全是<br>學習瑜伽的環境！</p>
+                </div>
+                <img src="img/s4_stu_3.png" alt="" />
+                <img src="img/s4_bg3.png" alt="" class="s4_bg" />
+            </div>
+            <div class="item">
+                <div class="s4_content">
+                <div>
+                    <span>Moore Chen</span>
+                    <ul>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    </ul>
+                </div>
+                <p>環境舒適 教練老師都很專業，<br>整體感覺很棒! </p>
+                </div>
+                <img src="img/s4_stu_4.png" alt="" />
+                <img src="img/s4_bg4.png" alt="" class="s4_bg" />
+            </div>
+            <div class="item">
+                <div class="s4_content">
+                <div>
+                    <span>Brian Wu</span>
+                    <ul>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    <li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    </ul>
+                </div>
+                <p>教學內容彈性，可以跟老師討<br>論上課內容！</p>
+                </div>
+                <img src="img/s4_stu_5.png" alt="" />
+                <img src="img/s4_bg5.png" alt="" class="s4_bg" />
+            </div>
+            <div class="item">
+                <div class="s4_content">
+                <div>
+                    <span>Ashley Chang</span>
+                    <ul>
+                        li><img src="img/icon_surfboard.svg" alt="" /></li>
+                        li><img src="img/icon_surfboard.svg" alt="" /></li>
+                        li><img src="img/icon_surfboard.svg" alt="" /></li>
+                        li><img src="img/icon_surfboard.svg" alt="" /></li>
+                        li><img src="img/icon_surfboard.svg" alt="" /></li>
+                    </ul>
+                </div>
+                    <p>來這裡完全可以放鬆心靈！可<br>以選擇自由加購住宿超方便。</p>
+                </div>
+                <img src="img/s4_stu_6.png"" />
+                <img src="img/s4_bg6.png" alt="" class="s4_bg" />
+            </div>
+            </div>
+        </div>
+        <p class="more_teacher">更多師資
+                <i class="material-icons">keyboard_arrow_right </i>
+            </p>
+            <div class="btn_search_course">
+                    <a href="surf.html"class="btn border_r lh_16 ta_c oblue_bg white fw_7">探索衝浪</a>
+                    <a href="yoga.html"class="btn border_r lh_16 ta_c oblue_bg white fw_7">探索瑜伽</a>  
+                </div>
+        </section>
+        <!-- s4結束 -->
+        <footer></footer>
+        <script src="js/ham_toggle.js"></script>
+        <script src="js/all.js"></script>
+    </body>
 </html>
