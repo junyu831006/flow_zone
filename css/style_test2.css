@@ -101,6 +101,9 @@ p {
   font-size: 1.6rem;
 }
 /* line-height */
+.lh_30{
+  line-height: 3;
+}
 .lh_21 {
   line-height: 2.1;
 }
@@ -119,6 +122,11 @@ a {
 i {
   font-size: 14px;
 }
+/* 文字陰影 */
+.tsh{
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+
+}
 .btn {
   display: inline-block;
   width: 74px;
@@ -126,7 +134,7 @@ i {
   font-weight: blod;
   padding: 12px 36px;
   letter-spacing: 2px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
+  /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35); */
 }
 
 /* 屬性控制 */
@@ -140,6 +148,9 @@ i {
 
 .ptb_60 {
   padding: 60px 0;
+}
+.pt_60 {
+  padding-top: 60px;
 }
 .pt_20 {
   padding-top: 20px;
@@ -333,7 +344,14 @@ nav li a{
   transition: 0.5s;
   top: 0;
 }
-
+.s2_btn:hover{
+  /* transform: translateY(4px); */
+  top: -4px;
+  box-shadow: 0px 1px 1px gray;
+  background: #96dde7;
+  background-color: #96dde7;
+  color: #fff;
+}
 .s2_contain {
   margin-top: 3%;
 }
@@ -414,15 +432,15 @@ nav li a{
   font-size: 16px;
   font-weight: 700;
   line-height: 84px;
-  cursor: pointer;
+  /* cursor: pointer; */
   
 }
-.aaa:hover div{
+.s3_btn:hover div{
   /* transform: translateY(4px); */
-  top: -4px;
+  /* top: -4px; */
   box-shadow: 0px 1px 1px gray;
-  background: #96dde7;
   background-color: #96dde7;
+  border:1px solid #96dde7;
   color: #fff;
 }
 /* .btn_surf a{
@@ -496,7 +514,7 @@ padding: 42px 20px;
 .s4_bg{
   position: absolute;
 
-  bottom: 0;
+  bottom: -1px;
   z-index: 0;
 
 }
@@ -587,16 +605,18 @@ label{
   vertical-align: middle;
 }
 .s4 a{
-  background-color:#1EB7CD;
-  color: #fff;
-  margin: 0 30px;
-  padding: 12px 26px;
-  width: 74px;
-  font-weight: 700;
+margin: 0 3%;
 }
 .btn_search_course{
   text-align: center;
   padding-top: 50px;
+}
+.btn_surf_h:hover{
+  top: -4px;
+  box-shadow: 0px 1px 1px gray;
+  background: #96dde7;
+  background-color: #96dde7;
+  color: #fff;
 }
 
 
@@ -664,7 +684,7 @@ label{
     padding: 5px 0;
   }
   #nav_ham{
-    display: noen;
+    display: block;
     align-self: center;
     height: 27px;
     z-index: 10000;
@@ -750,7 +770,7 @@ label{
   .s1_content {
     padding-top: 30px;
   }
-  .s1_content div:last-child,
+  .s1_content div:nth-of-type(3),
   .s1_content div:nth-of-type(2) {
     margin-top: 30px;
   }
@@ -791,6 +811,9 @@ label{
     position: absolute;
     z-index: -1;
   }
+  .s3_bg_txt{
+    display: none;
+  }
   .s3_sea {
     bottom: -350px;
     position: absolute;
@@ -803,22 +826,42 @@ label{
   .ys_banner_ctrl {
     padding: 16% 0 0 10%;
   }
-  .btn_surf {
-    margin: 0 15px;
+  .yoga_center>div:nth-child(3),
+  .yoga_center>div:nth-child(4),
+  .yoga_center>div:nth-child(5),
+  .yoga_center>div:nth-child(6),
+  .yoga_center>div:nth-child(7){
+    display: none;
   }
+  .btn_yoga{
+    border: 2px solid #1EB7CD;
+    color: #1EB7CD;
+    margin-top: 10px;
+  }
+  .y_banner_ctrl{
+    padding: 20% 0 0 10%;
+
+  }
+  .y_bg_1{
+    background-position: right;
+  }
+  /* .btn_surf {
+    margin: 0 15px;
+  } */
   .p_240 {
     max-width: 510px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
   }
+ 
   .p_510 {
     max-width: 510px;
   }
   .p240_content {
     left: 110px;
   }
-  .y_bg_2 {
-    /* background-image: url('../img/yoga_course_1.png'); */
-    background-size: cover;
-  }
+  
   /* surf */
   .surf_s1 {
     height: 1400px;
@@ -862,28 +905,38 @@ label{
   .product_pht{
     display: none;
   }
+  /* about us */
+  .about_pic{
+    display: none;
+  }
+  .about_coach_ctrl h2{
+    padding-left: 15%;
+  }
   /* location */
   .location_ctrl{
     margin: auto;
   }
+
   .location_ctrl iframe{
     text-align: center;
+    /* width: 100px; */
   }
   .location_info div{
     margin: auto;
   }
+
   
 }
 @media screen and (max-width: 400px) {
   /* page-yoooooooga */
   .p_510 {
-    width: 320px;
+    /* max-width: 320px; */
     /* margin:auto; */
   }
-    /* product */
-    .product_highlight{
-      margin: 10px 7px 0 0px;
-    }
+  /* product */
+  .product_highlight{
+    margin: 10px 7px 0 0px;
+  }
 }
 /*******  media query  767 *********/
 @media screen and (min-width: 768px) {
@@ -983,6 +1036,7 @@ label{
   .s1 h2 + div {
     margin-top: 60px;
   }
+  
   .s2 h2::before,
   .s2 h2::after {
     transform: translate(-26px, 4px);
@@ -996,10 +1050,10 @@ label{
     flex-direction: row;
     justify-content: space-around;
   }
-  .s1_content div:last-child,
-  .s1_content div:nth-of-type(2) {
-    margin-left: 30px;
-  }
+  /* .s1_content div:nth-child(2),
+  .s1_content div:nth-child(1){
+    margin-top: 30px;
+  } */
   .s2 > div {
     display: flex;
   }
@@ -1045,6 +1099,9 @@ label{
   .ys_banner_ctrl > h2 {
     font-size: 4rem;
   }
+  .btn_yoga{
+    display: none;
+  }
   .p_510 {
     background-size: cover;
     width: 510px;
@@ -1057,7 +1114,7 @@ label{
     left: 94px;
   }
   .s4{
-    padding: 22% 0;
+    padding: 22% 0 10% 0;
   }
   .s4 h2{
     text-align: center;
@@ -1108,6 +1165,16 @@ label{
     top:50%;
     left: 50%;
     transform: translate(-50%, 290%);
+  }
+  /* about us */
+  .about_content{
+    width: 47.5%;
+  }
+  .about_pic{
+    width: 27.5%;
+  }
+  .about_coach_ctrl h2{
+    padding-left: 6%;
   }
 
 }
@@ -1213,17 +1280,13 @@ label{
     position: relative;
     /* margin: auto; */
   }
-/* .aaa{
-  animation: mandala 30s infinite linear;
-  width: 1200px;
-  margin-left: -700px;
-
-} */
+} 
   .banner_mail {
     display: inline-block;
     font-family: "Nauman", Arial, "Microsoft JhengHei";
     color: #1862db;
-    padding-left: 19.16666667%;
+    padding-left: 72.166667%;
+    padding-top: 77px;
     letter-spacing: 2px;
     writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
@@ -1354,10 +1417,7 @@ label{
       transform: translate3d(0, 1px, 0);
     }
   }
- 
-}
-/* The dots/bullets/indicators */
-/*******  media query max 575  *********/
+
 
 /* yoga surf總控 */
 .yoga_gradient_bg {
@@ -1414,7 +1474,30 @@ label{
 .pb_215 {
   padding-bottom: 215px;
 }
-
+.y_bg_2 {
+  background-image: url('../img/y_bg_2.png');
+  background-size: cover;
+}
+.y_bg_3 {
+  background-image: url('../img/y_bg_3.png');
+  background-size: cover;
+}
+.y_bg_4 {
+  background-image: url('../img/y_bg_4.png');
+  background-size: cover;
+}
+.y_bg_5 {
+  background-image: url('../img/y_bg_5.png');
+  background-size: cover;
+}
+.y_bg_6 {
+  background-image: url('../img/y_bg_6.png');
+  background-size: cover;
+}
+.y_bg_7 {
+  background-image: url('../img/y_bg_7.png');
+  background-size: cover;
+}
 /* 字 */
 /* 特例用 fz17 */
 .surf_title {
@@ -1450,6 +1533,11 @@ label{
 .yoga_s1 {
   padding-top: 60px;
 }
+.yoga_s2,.yoga_s3{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .yoga_center {
   display: flex;
   flex-wrap: wrap;
@@ -1463,12 +1551,9 @@ label{
   background-repeat: no-repeat;
 }
 .y_bg_1 {
-  background-image: url("../img/surf_img_6.jpg");
+  background-image: url("../img/y_bg_1.png");
 }
-.y_bg_2 {
-  background-image: url("../img/yoga_course_1.png");
-  /* background-position: cover; */
-}
+
 
 /* 熱門瑜伽 */
 .yoga_hot {
@@ -1541,9 +1626,8 @@ label{
   color: #224bdd;
 }
 /*  背景＿ 瑜伽體驗 */
-.ex {
-  background-image: url("img/yoga_new_bg.jpg");
-  background-position: top center;
+.yoga_bg_2{
+  background-image: url("../img/yoga_bg_2.jpg");
   background-position: 50% 60%;
 }
 /*  背景＿ 師資認證 */
@@ -1555,7 +1639,7 @@ label{
 /* 商品總控 */
 .product_link{
   display: inline-block;
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
 .p_510,
@@ -1572,8 +1656,8 @@ label{
   position: absolute;
   width: 100%;
   height: 100%;
-  /* top: 0; */
-  /* left: 0; */
+  top: 0; 
+  left: 0;
   background-image: linear-gradient(
     360deg,
     rgba(0, 0, 0, 0.8) 25px,
@@ -1601,6 +1685,7 @@ label{
   display: inline-block;
   position: relative;
   vertical-align: middle;
+  cursor: pointer;
 }
 .fav_center {
   position: absolute;
@@ -1608,14 +1693,7 @@ label{
   left: 6px;
   color: #ffffff;
 }
-/* .icon_fav:hover {
-  background-color:rgb(255, 198, 198);
-  background-color: #f4bfbf;
-  opacity: 0.8;
-} */
-/* .icon_fav:active {
-  background-color: rgba(255, 140, 140, 0.85);
-} */
+
 /* 商品總控_評價 */
 .rate {
   padding: 1px 0 0 1px;
@@ -1664,7 +1742,7 @@ label{
   height: 56px;
   /* border: 2px solid #1eb7cd; */
   border-radius: 50%;
-  background-color: #06B1A#1eb7cd;
+  background-color: #1eb7cd;
   display: inline-block;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.24);
 }
@@ -1677,7 +1755,8 @@ label{
 /* .yoga_s1{
     display: flex;
 } */
-.yoga_s1 .circle_coach img {
+.yoga_s1 .circle_coach img,
+.yoga_s2 .circle_coach img{
   border: 3px solid #f4bfbf;
 }
 
@@ -1686,8 +1765,23 @@ label{
   display: inline-block;
   height: 311px;
   position: relative;
+  /* transform: translateY(0); */
 }
+.p_240:hover,.p_510:hover{
+  /* transform: translateY(-10px); */
+  box-shadow: 0px 1px 3px gray;
 
+}
+.p_240:hover {
+  /* transform: translateY(-10px); */
+  /* transform: scale(1.2); */
+  animation: bg_hover 2s ;
+}
+@keyframes bg_hover{
+  from{  background-size: 100%;}
+  to{  background-size: 110%;}
+
+}
 /* p240定位_教練頭像 */
 .p240_overlay > .circle_coach {
   position: absolute;
@@ -1788,7 +1882,7 @@ label{
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 5%;
-    max-width: 69%;
+    max-width: 92%;
     margin: auto;
 }
 .s_bg_1{
@@ -1946,12 +2040,13 @@ ol>li{
 
 /* 購買fixed bar */
 #navbar {
-  background-color:rgb(255, 255, 255,.9);
+  background-color:rgba(255, 255, 255,.9);
   position: fixed;
   bottom: -70px;
   width: 100%;
   display: block;
   transition: bottom  0.3s;
+  visibility: visible;
 }
 .p_price_ctrl{
   max-width: 1080px;
@@ -1981,9 +2076,82 @@ ol>li{
   box-shadow: 0px 1px 1px gray;
   background: rgb(252, 148, 148);
 }
+/* about us */
+.about_bg1{
+  /* background: url('../img/about_bg1png.png') no-repeat; */
+  /* background-size: 100%; */
+  /* height: 340px; */
+}
+.about_bg2{
+  background: url('../img/footer.png') no-repeat;
+  border-top: 1px solid rgba(180, 180, 180, .15);
+}
+.about_story{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.about_story div{
+  margin: auto;
+}
+.about_story p{
+  line-height: 2;
+  padding-top: 10px;
+  height: 100%;
+}
+/* about 教練 */
+.about_coach{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about_coach>div{
+  /* width: 22.5%; */
+  max-width: 270px;
+  margin: 30px 15px;
+  background-color: #fff;
+}
+.ac_bg1{
+  background-image: url('../img/about_coach1_bg1.png') ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.ac1,.ac2,.ac3{
+  width: 72.59%;
+  padding-top: 20px;
+}
+.ac_bg{
+  background-image: url('../img/about_coach2_bg1.png') ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#ac1_bg2{
+  width: 39.25%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.about_coach_ctrl h2{
+  padding-top: 60px;
+  color: #2E2E2E;
+}
+.about_coach_txt{
+  padding: 15px 13%;
+}
+.about_coach_txt p:first-of-type{
+  color: #7F7F7F;
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 3px 0;
+}
+.about_coach_txt p:last-child{
+  color: #484848;
+  line-height: 1.8;
+}
 /* location */
 .location{
   background: url('../img/location_banner.png')  no-repeat fixed;
+  height: 1000px;
 }
 .location h2{
   padding-top: 60px;
@@ -2030,6 +2198,7 @@ ol>li{
   color: #F4BFBF;
 }
 
+
 /* footer */
 footer{
     width: 100%;
@@ -2040,7 +2209,7 @@ footer{
 
 .footer_info{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 30px;
 }
 .footer_info>div{

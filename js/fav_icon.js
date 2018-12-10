@@ -9,7 +9,7 @@ function pink(e){
             // var color = window.getComputedStyle(icon_fav[k]).getPropertyValue('background-color');
             // window.getComputedStyle(icon_fav[k]).getPropertyValue('backgroundColor');
             // console.log(color);
-            //
+            console.log(icon_fav[k]);
             if(e.currentTarget.style.backgroundColor == 'rgba(0, 0, 0, 0.2)')
             {
                 e.currentTarget.style.backgroundColor='rgb(244, 191, 191)';
