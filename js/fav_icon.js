@@ -3,13 +3,13 @@ function pink(e){
     var icon_fav=document.getElementsByClassName("icon_fav");
    
     // var fav_center=document.getElementsByClassName("fav_center");
-    //for是要每一個icon_fav都要做事情
-    for(var k=0; k<icon_fav.length;k++){
+    //for是要每一個icon_fav都要做事情，但是已經在init抓元素了，所以不用再跑for回圈
+    // for(var k=0; k<icon_fav.length;k++){
         // if(e.currentTarget==icon_fav[k]){
             // var color = window.getComputedStyle(icon_fav[k]).getPropertyValue('background-color');
             // window.getComputedStyle(icon_fav[k]).getPropertyValue('backgroundColor');
             // console.log(color);
-            console.log(icon_fav[k]);
+
             if(e.currentTarget.style.backgroundColor == 'rgba(0, 0, 0, 0.2)')
             {
                 e.currentTarget.style.backgroundColor='rgb(244, 191, 191)';
@@ -17,9 +17,10 @@ function pink(e){
             else if(e.currentTarget.style.backgroundColor == 'rgb(244, 191, 191)'){
                 e.currentTarget.style.backgroundColor='rgba(0, 0, 0, 0.2)';
             }
+            console.log(e.currentTarget.style.backgroundColor);
         // return;
         // };
-    };
+    // };
 }
 //監聽.icon_fav
 
