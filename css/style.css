@@ -164,9 +164,7 @@ i {
 .pt_20 {
   padding-top: 20px;
 }
-.pt_20 {
-  padding-top: 20px;
-}
+
 .v_m {
   vertical-align: middle;
 }
@@ -179,15 +177,8 @@ i {
 .d_f {
   display: flex;
 }
-/* grid */
-.col_12 {
-  width: 100%;
-}
+
 /*******  避免覆蓋  *********/
-/* header{
-    background-image: none;
-    padding-bottom: 19%;
-} */
 .bg1 {
   background-image: url("../img/banner_pic1.png");
   height: 600px;
@@ -364,7 +355,7 @@ nav li a{
 .s2_contain {
   margin-top: 3%;
 }
-
+/* s2標題圖騰旋轉裝飾（需衝浪也有） */
 /* .s2 h2::before,
 .s2 h2::after {
   margin: 0 7px;
@@ -375,7 +366,7 @@ nav li a{
   height: 20px;
   display: inline-block;
   animation: mandala 2s infinite linear;
-} */
+}
 @keyframes mandala {
   0% {
     transform: rotate(0deg);
@@ -383,7 +374,7 @@ nav li a{
   100% {
     transform: rotate(359deg);
   }
-}
+} */
 
 /* surf */
 .s3 {
@@ -630,7 +621,7 @@ margin: 0 3%;
 
 /*******  media query  *********/
 
-@media screen and (max-width: 767px) {
+ /* @media screen and (max-width: 767px) {
   .col-sm-1 {
     width: 8.333%;
   }
@@ -667,7 +658,7 @@ margin: 0 3%;
   .col-sm-12 {
     width: 100%;
   }
-}
+}   */
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 4.5rem;
@@ -961,7 +952,7 @@ margin: 0 3%;
   }
 }
 /*******  media query  767 *********/
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .col-md-1 {
     width: 8.333%;
   }
@@ -998,7 +989,7 @@ margin: 0 3%;
   .col-md-12 {
     width: 100%;
   }
-}
+} */
 @media screen and (min-width: 768px) {
   header {
     background-image: none;
@@ -1224,7 +1215,7 @@ margin: 0 3%;
 
 
 /*******  media query  1200 *********/
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .col-xl-1 {
     width: 8.333%;
   }
@@ -1261,7 +1252,7 @@ margin: 0 3%;
   .col-xl-12 {
     width: 100%;
   }
-}
+} */
 @media screen and (min-width: 1200px) {
   header {
     background-image: url("../img/header_bg.svg");
